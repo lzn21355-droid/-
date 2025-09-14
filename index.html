@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="description" content="舌尖中国 - 探索川湘粤鲁等中国经典菜系，了解名菜背后的文化故事，感受中华美食魅力" />
+  <meta name="keywords" content="中国美食,舌尖中国,名菜导览,中华菜系,地方特色菜" />
+  <title>舌尖中国 — 寻味中华·经典美食导览</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 头部导航区 -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-wrapper">
+        <h1 class="brand">
+          <span class="brand-icon">🍽️</span> 舌尖中国
+        </h1>
+        <button class="menu-toggle" id="menu-toggle" aria-label="打开导航菜单">
+          ☰
+        </button>
+        <nav class="main-nav" role="navigation" aria-label="主导航">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#home" class="nav-link" aria-current="page">首页</a></li>
+            <li class="nav-item"><a href="#dishes" class="nav-link">名菜图鉴</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">关于本站</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">分享美食</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主内容区 -->
+  <main class="container" role="main">
+    <!-- 首页英雄区 -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h2 id="hero-title" class="hero-title">发现中国味道的万千可能</h2>
+        <p class="hero-desc">
+          从麻辣鲜香的川味江湖，到精致细腻的粤式茶点；从外酥里嫩的北京烤鸭，到汤鲜味浓的兰州拉面——<br>
+          在这里，一站式解锁中华名菜的风味密码与背后的文化故事。
+        </p>
+        <a href="#dishes" id="view-gallery" class="btn btn-primary">
+          进入名菜图鉴 <span class="btn-icon">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 名菜展示区 -->
+    <section id="dishes" class="gallery" aria-labelledby="gallery-title">
+      <div class="section-header">
+        <h2 id="gallery-title" class="section-title">中华代表菜品</h2>
+        <p class="section-desc">跨越地域的风味集锦，每一道菜都是一段文化传承</p>
+      </div>
+      <div class="grid" id="photo-grid" aria-live="polite" role="grid" aria-label="菜品图片集"></div>
+    </section>
+
+    <!-- 关于舌尖中国 -->
+    <section id="about" class="about" aria-labelledby="about-title">
+      <div class="section-header">
+        <h2 id="about-title" class="section-title">关于舌尖中国</h2>
+      </div>
+      <div class="about-content">
+        <p class="about-desc">
+          中华美食源远流长，既有豪放热烈的川湘风味，也有清淡雅致的江浙佳肴；既有名扬天下的北京烤鸭，也有寻常巷陌的街头小吃。  
+        </p>
+        <p class="about-desc">
+          本站以“舌尖中国”为主题，精选各地经典菜肴与饮食文化，旨在用图文并茂的形式展现中华饮食的多样与独特。  
+        </p>
+        <p class="about-desc">
+          美食不仅是味觉的体验，更是情感与记忆的纽带。希望在这里，你能感受到舌尖上的温度与文化的深意。  
+        </p>
+      </div>
+    </section>
+
+    <!-- 分享美食 -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="section-header">
+        <h2 id="contact-title" class="section-title">分享你的美食推荐</h2>
+        <p class="section-desc">如果有私藏的家乡菜或特色美味，欢迎告诉我们</p>
+      </div>
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="dish" class="form-label">推荐菜名</label>
+          <input type="text" id="dish" name="dish" class="form-input" required 
+                 aria-required="true" placeholder="例如：东坡肉">
+          <div class="input-hint">请填写准确的菜品名称，方便他人识别</div>
+        </div>
+        <div class="form-group">
+          <label for="region" class="form-label">菜品发源地</label>
+          <input type="text" id="region" name="region" class="form-input" required 
+                 aria-required="true" placeholder="例如：浙江杭州">
+          <div class="input-hint">可填写省份、城市或具体地域，助力地域美食归类</div>
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">推荐理由</label>
+          <textarea id="message" name="message" rows="4" class="form-input" required 
+                    aria-required="true" placeholder="说说这道菜的特色、口感或背后的故事"></textarea>
+        </div>
+        <button type="submit" class="btn btn-submit">
+          提交推荐 <span class="btn-icon">✓</span>
+        </button>
+      </form>
+      <div id="form-result" class="form-result" aria-live="polite" role="status"></div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <p class="copyright">© 2025 舌尖中国 · 美食文化展示示例</p>
+        <p class="copyright-hint">所有图片与素材均已标注来源，仅供非商业用途展示</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 图片查看器 -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption">
+    <button class="lightbox-close" id="lightbox-close" aria-label="关闭图片查看器">✕</button>
+    <div class="lightbox-loading" aria-hidden="true">加载中...</div>
+    <img id="lightbox-img" class="lightbox-img" alt="放大查看的菜品图片" loading="lazy">
+    <p id="lightbox-caption" class="lightbox-caption" aria-live="polite"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
