@@ -1,31 +1,31 @@
 // 数据：使用 Wikimedia Commons 的可重用图片（Special:FilePath 用于稳定直链）
 const foods = [
   {
-    src: 'https://commons.wikimedia.org/wiki/Special:FilePath/Authentic_Mapo_Tofu.jpg',
+    src: 'images/1.jpg',
     title: '麻婆豆腐',
     subtitle: '四川代表菜（麻辣鲜香）',
     credit: 'Sichuanfoodlover / CC BY-SA 4.0'
   },
   {
-    src: 'https://commons.wikimedia.org/wiki/Special:FilePath/Peking_Duck.jpg',
+    src: 'images/2.jpg',
     title: '北京烤鸭',
     subtitle: '北京名菜（皮脆肉嫩）',
     credit: 'Wikimedia Commons / public domain or CC'
   },
   {
-    src: 'https://commons.wikimedia.org/wiki/Special:FilePath/Xiaolongbao.jpg',
+    src: 'images/3.jpg',
     title: '小笼包',
     subtitle: '上海点心（汤汁丰富）',
     credit: 'Wikimedia Commons / CC'
   },
   {
-    src: 'https://commons.wikimedia.org/wiki/Special:FilePath/Hotpot.jpg',
+    src: 'images/4.jpg',
     title: '火锅',
     subtitle: '川渝/全国流行（涮烫热辣）',
     credit: 'Wikimedia Commons / CC'
   },
   {
-    src: 'https://commons.wikimedia.org/wiki/Special:FilePath/Beef_noodle_soup(Lanzhou).jpg',
+    src: 'images/5.jpg',
     title: '兰州牛肉面',
     subtitle: '西北面食代表（牛肉拉面）',
     credit: 'Wikimedia Commons / CC'
@@ -94,3 +94,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
